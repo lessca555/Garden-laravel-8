@@ -30,3 +30,22 @@ Route::middleware('role:admin')->get('/dashboard', function() {
 Route::middleware('role:receptionist')->get('/beranda', function() {
     return 'Beranda';
 })->name('beranda');
+
+Route::get('/all-rooms', function () {
+    return view('all-rooms');
+});
+Route::get('/services', function () {
+    return view('services');
+});
+Route::get('/about-us', function () {
+    return view('about-us');
+});
+Route::get('/contact-us', function () {
+    return view('contact-us');
+});
+Route::get('/my-profile', function () {
+    return view('my-profile');
+});
+Route::get('/room-details', function () {
+    return view('room-details');
+});

@@ -1,3 +1,6 @@
+@extends('layouts.master')
+
+@section('content')
 <!--Check Availability SECTION-->
 		<div>
 			<div class="slider fullscreen">
@@ -54,15 +57,16 @@
 						<div class="col-md-4">
 							<div class="to-ho-hotel-con">
 								<div class="to-ho-hotel-con-1">
-									<div class="hom-hot-av-tic"> Available Tickets: 42 </div> <img src="assets/images/room/3.jpg" alt=""> </div>
+									<img src="assets/images/room/1.jpg" alt="">
+								</div>
 								<div class="to-ho-hotel-con-23">
-									<div class="to-ho-hotel-con-2"> <a href="all-rooms.html"><h4>Master Room</h4></a> </div>
 									<div class="to-ho-hotel-con-3">
 										<ul>
-											<li>City: illunois,united states
-												<div class="dir-rat-star ho-hot-rat-star"> Rating: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i> </div>
+											<li>
+												<div class="to-ho-hotel-con-2"> <a href="/room-details"><h4>Deluxe Room</h4></a> </div>
+												<div class="dir-rat-star ho-hot-rat-star"> Rating: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i> </div>
 											</li>
-											<li><span class="ho-hot-pri-dis">$720</span><span class="ho-hot-pri">$420</span> </li>
+											<li><span class="ho-hot-pri">Rp 2.415.000</span> </li>
 										</ul>
 									</div>
 								</div>
@@ -72,15 +76,16 @@
 						<div class="col-md-4">
 							<div class="to-ho-hotel-con">
 								<div class="to-ho-hotel-con-1">
-									<div class="hom-hot-av-tic"> Available Tickets: 520 </div> <img src="assets/images/room/1.jpg" alt=""> </div>
+									<img src="assets/images/room/2.jpg" alt="">
+								</div>
 								<div class="to-ho-hotel-con-23">
-									<div class="to-ho-hotel-con-2"> <a href="all-rooms.html"><h4>Mini-Suite</h4></a> </div>
 									<div class="to-ho-hotel-con-3">
 										<ul>
-											<li>City: illunois,united states
+											<li>
+												<div class="to-ho-hotel-con-2"> <a href="/room-details"><h4>Superior Room</h4></a> </div>
 												<div class="dir-rat-star ho-hot-rat-star"> Rating: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i> </div>
 											</li>
-											<li><span class="ho-hot-pri-dis">$840</span><span class="ho-hot-pri">$540</span> </li>
+											<li><span class="ho-hot-pri">Rp 1.325.000</span> </li>
 										</ul>
 									</div>
 								</div>
@@ -90,69 +95,16 @@
 						<div class="col-md-4">
 							<div class="to-ho-hotel-con">
 								<div class="to-ho-hotel-con-1">
-									<div class="hom-hot-av-tic"> Available Tickets: 92 </div> <img src="assets/images/room/2.jpg" alt=""> </div>
-								<div class="to-ho-hotel-con-23">
-									<div class="to-ho-hotel-con-2"> <a href="all-rooms.html"><h4>Ultra Deluxe</h4></a> </div>
-									<div class="to-ho-hotel-con-3">
-										<ul>
-											<li>City: illunois,united states
-												<div class="dir-rat-star ho-hot-rat-star"> Rating: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i> </div>
-											</li>
-											<li><span class="ho-hot-pri-dis">$680</span><span class="ho-hot-pri">$380</span> </li>
-										</ul>
-									</div>
+									<img src="assets/images/room/3.jpg" alt="">
 								</div>
-							</div>
-						</div>
-						<!-- HOTEL GRID -->
-						<div class="col-md-4">
-							<div class="to-ho-hotel-con">
-								<div class="to-ho-hotel-con-1">
-									<div class="hom-hot-av-tic"> Available Tickets: 42 </div> <img src="assets/images/room/4.jpg" alt=""> </div>
 								<div class="to-ho-hotel-con-23">
-									<div class="to-ho-hotel-con-2"> <a href="all-rooms.html"><h4>Luxury Room</h4></a> </div>
 									<div class="to-ho-hotel-con-3">
 										<ul>
-											<li>City: illunois,united states
+											<li>
+												<div class="to-ho-hotel-con-2"> <a href="/room-details"><h4>Standard Room</h4></a> </div>
 												<div class="dir-rat-star ho-hot-rat-star"> Rating: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i> </div>
 											</li>
-											<li><span class="ho-hot-pri-dis">$720</span><span class="ho-hot-pri">$420</span> </li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- HOTEL GRID -->
-						<div class="col-md-4">
-							<div class="to-ho-hotel-con">
-								<div class="to-ho-hotel-con-1">
-									<div class="hom-hot-av-tic"> Available Tickets: 520 </div> <img src="assets/images/room/5.jpg" alt=""> </div>
-								<div class="to-ho-hotel-con-23">
-									<div class="to-ho-hotel-con-2"> <a href="all-rooms.html"><h4>Premium Room</h4></a> </div>
-									<div class="to-ho-hotel-con-3">
-										<ul>
-											<li>City: illunois,united states
-												<div class="dir-rat-star ho-hot-rat-star"> Rating: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i> </div>
-											</li>
-											<li><span class="ho-hot-pri-dis">$840</span><span class="ho-hot-pri">$540</span> </li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- HOTEL GRID -->
-						<div class="col-md-4">
-							<div class="to-ho-hotel-con">
-								<div class="to-ho-hotel-con-1">
-									<div class="hom-hot-av-tic"> Available Tickets: 92 </div> <img src="assets/images/room/6.jpg" alt=""> </div>
-								<div class="to-ho-hotel-con-23">
-									<div class="to-ho-hotel-con-2"> <a href="all-rooms.html"><h4>Normal Room</h4></a> </div>
-									<div class="to-ho-hotel-con-3">
-										<ul>
-											<li>City: illunois,united states
-												<div class="dir-rat-star ho-hot-rat-star"> Rating: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i> </div>
-											</li>
-											<li><span class="ho-hot-pri-dis">$680</span><span class="ho-hot-pri">$380</span> </li>
+											<li><span class="ho-hot-pri">Rp 756.000</span> </li>
 										</ul>
 									</div>
 								</div>
@@ -164,6 +116,117 @@
 		</div>
 		<!--END HOTEL ROOMS-->
 		<!--TOP SECTION-->
+		<div class="blog hom-com pad-bot-0">
+			<div class="container">
+				<div class="row">
+					<div class="hom1-title">
+						<h2>Banquet Spaces & Meeting Rooms</h2>
+						<div class="head-title">
+							<div class="hl-1"></div>
+							<div class="hl-2"></div>
+							<div class="hl-3"></div>
+						</div>
+						<p>Aenean euismod sem porta est consectetur posuere. Praesent nisi velit, porttitor ut imperdiet a, pellentesque id mi.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div>
+						<div class="col-md-3 n2-event">
+							<!--event IMAGE-->
+							<div class="n21-event hovereffect"> <img src="assets/images/event/1.jpg" alt="">
+								<div class="overlay"> <a href="booking.html"><span class="ev-book">Book Now</span></a> </div>
+							</div>
+							<!--event DETAILS-->
+							<div class="n22-event"> <a href="#!"><h4>Wedding Halls</h4></a> <span class="event-date">Capacity: 500,</span> <span class="event-by"> Price: $900</span>
+								<p>undergraduate applicants are admitted on a need-blind basis, and the university offers undergraduate applicants</p>
+								<!--event SHARE-->
+								<div class="event-share">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook"></i></a>
+										</li>
+										<li><a href="#"><i class="fa fa-google-plus"></i></a>
+										</li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a>
+										</li>
+										<li><a href="#"><i class="fa fa-linkedin"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 n2-event">
+							<!--event IMAGE-->
+							<div class="n21-event hovereffect"> <img src="assets/images/event/2.jpg" alt="">
+								<div class="overlay"> <a href="booking.html"><span class="ev-book">Book Now</span></a> </div>
+							</div>
+							<!--event DETAILS-->
+							<div class="n22-event"> <a href="#!"><h4>Business Meetings</h4></a> <span class="event-date">Capacity: 500,</span> <span class="event-by"> Price: $700</span>
+								<p>undergraduate applicants are admitted on a need-blind basis, and the university offers undergraduate applicants</p>
+								<!--event SHARE-->
+								<div class="event-share">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook"></i></a>
+										</li>
+										<li><a href="#"><i class="fa fa-google-plus"></i></a>
+										</li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a>
+										</li>
+										<li><a href="#"><i class="fa fa-linkedin"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 n2-event">
+							<!--event IMAGE-->
+							<div class="n21-event hovereffect"> <img src="assets/images/event/3.jpg" alt="">
+								<div class="overlay"> <a href="booking.html"><span class="ev-book">Book Now</span></a> </div>
+							</div>
+							<!--event DETAILS-->
+							<div class="n22-event"> <a href="#!"><h4>Social Event</h4></a> <span class="event-date">Capacity: 420,</span> <span class="event-by"> Price: $750</span>
+								<p>undergraduate applicants are admitted on a need-blind basis, and the university offers undergraduate applicants</p>
+								<!--event SHARE-->
+								<div class="event-share">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook"></i></a>
+										</li>
+										<li><a href="#"><i class="fa fa-google-plus"></i></a>
+										</li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a>
+										</li>
+										<li><a href="#"><i class="fa fa-linkedin"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 n2-event">
+							<!--event IMAGE-->
+							<div class="n21-event hovereffect"> <img src="assets/images/event/4.jpg" alt="">
+								<div class="overlay"> <a href="booking.html"><span class="ev-book">Book Now</span></a> </div>
+							</div>
+							<!--event DETAILS-->
+							<div class="n22-event"> <a href="#!"><h4>Birthdays and Debut</h4></a> <span class="event-date">Capacity: 240,</span> <span class="event-by"> Price: $500</span>
+								<p>undergraduate applicants are admitted on a need-blind basis, and the university offers undergraduate applicants</p>
+								<!--event SHARE-->
+								<div class="event-share">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook"></i></a>
+										</li>
+										<li><a href="#"><i class="fa fa-google-plus"></i></a>
+										</li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a>
+										</li>
+										<li><a href="#"><i class="fa fa-linkedin"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="blog hom-com pad-bot-0">
 			<div class="container">
 				<div class="row">
@@ -378,30 +441,4 @@
 				</div>
 			</div>
 		</div>
-			<div>
-				<!--TOP SECTION-->
-				<div class="hom-footer-section">
-					<div class="container">
-						<div class="row">
-							<div class="foot-com foot-1">
-								<ul>
-									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-									</li>
-									<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-									</li>
-									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-									</li>
-								</ul>
-							</div>
-							<div class="foot-com foot-2">
-								<h5>Phone: (+404) 142 21 23 78</h5> </div>
-							<div class="foot-com foot-3">
-								<!--<a class="waves-effect waves-light" href="#">online room booking</a>--><a class="waves-effect waves-light" href="booking.html">room reservation</a> </div>
-							<div class="foot-com foot-4">
-								<a href="#"><img src="assets/images/card.png" alt="" />
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+@endsection

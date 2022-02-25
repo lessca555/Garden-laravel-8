@@ -4,13 +4,15 @@
                     <div class="all-drop-down">
                         <!-- My Account Dropdown Structure -->
 						<ul id='drop-account' class='dropdown-content drop-con-man'>
-							<li><a href="all-rooms.html">All Suite Rooms</a>
+							<li><a href="/my-profile">Profile</a>
 							</li>
-							<li><a href="room-details.html">Room Details</a>
-							</li>
-							<li><a href="room-details-block.html">Room Details Block</a>
-							</li>
-							<li><a href="room-details-1.html">Room Parallax</a>
+							<li><a href="{{ route('logout') }}"
+								onclick="event.preventDefault();
+                                    document.getElementById('logout-form').submit();">
+                                {{ __('Logout') }}</a>
+								<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
 							</li>
 						</ul>      
                     </div>
@@ -22,15 +24,15 @@
 					</div>
 					<div class="menu-bar">
 						<ul>
-							<li><a href="#">Home</a>
+							<li><a href="/home">Home</a>
 							</li>
-							<li><a href="all-rooms.html">Rooms</a>
+							<li><a href="/all-rooms">Rooms</a>
 							</li>
-							<li><a href="services.html">Services</a>
+							<li><a href="/services">Services</a>
 							</li>
-                            <li><a href="about-us.html">About Us</a>
+                            <li><a href="/about-us">About Us</a>
 							</li>
-							<li><a href="contact-us.html">Contact Us</a>
+							<li><a href="/contact-us">Contact Us</a>
 							</li>
                             <li><a class='dropdown-button' href='#' data-activates='drop-account'> My Account <i class="fa fa-angle-down"></i></a>
 							</li>

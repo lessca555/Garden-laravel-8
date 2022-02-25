@@ -33,8 +33,8 @@
 	<section>
 		<!--TOP SECTION-->
 		@include('partials.nav')
-		<!--TOP SECTION-->
-		@include('home')				
+		<!--TOP SECTION-->	
+		@yield('content')		
 	</section>
 	<!--END HEADER SECTION-->
 	@include('partials.footer')
