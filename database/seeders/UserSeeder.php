@@ -16,24 +16,27 @@ class UserSeeder extends Seeder
     {
         $admin = User::create([
             'name' => 'Admin Role',
-            'email' => 'admin@test.com',
-            'password' => bcrypt('12345678')
+            'email' => 'admin@hotelhebat.com',
+            'password' => bcrypt('12345678'),
+            'role' => 'admin',
         ]);
 
         $admin->assignRole('admin');
 
         $user = User::create([
             'name' => 'User Role',
-            'email' => 'user@test.com',
-            'password' => bcrypt('12345678')
+            'email' => 'user@hotelhebat.com',
+            'password' => bcrypt('12345678'),
+            'role' => 'user',
         ]);
 
         $user->assignRole('user');
 
         $receptionist = User::create([
             'name' => 'Receptionist Role',
-            'email' => 'receptionist@test.com',
-            'password' => bcrypt('12345678')
+            'email' => 'receptionist@hotelhebat.com',
+            'password' => bcrypt('12345678'),
+            'role' => 'receptionist',
         ]);
 
         $receptionist->assignRole('receptionist');

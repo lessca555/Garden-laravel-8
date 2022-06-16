@@ -1,6 +1,19 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\ProfileController;
+use App\Http\Controllers\Admin\adminDashboardController;
+use App\Http\Controllers\Admin\adminRoomFacilityController;
+use App\Http\Controllers\Admin\adminHotelFacilityController;
+use App\Http\Controllers\Admin\adminRoomController;
+use App\Http\Controllers\Admin\adminAccountController;
+use App\Http\Controllers\Admin\receptionistAccountController;
+use App\Http\Controllers\Admin\guestAccountController;
+use App\Http\Controllers\BookingController;
+use App\Http\Controllers\PrintController;
+use App\Http\Controllers\HomeFacilityController;
+use App\Http\Controllers\Receptionist\receptionistDashboardController;
+use App\Http\Controllers\Receptionist\receptionistReservationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,28 +27,59 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/home');
 });
 
 Auth::routes();
 
+// ===== User =====
+
+// User Home
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// User Booking
+Route::middleware('role:user')->get('booking', [BookingController::class, 'index'])->name('booking');
+Route::middleware('role:user')->post('booking', [BookingController::class, 'store'])->name('reservation');
+// User Account
+Route::middleware('role:user')->get('/my-account', function () {
+    return view('my-account');
+});
+// Print
+Route::middleware('role:user')->get('/print/{reservation:id}', [PrintController::class, 'print'])->name('print');
+// User Hotel Facilities
+Route::get('/hotel-facilities', [App\Http\Controllers\HotelFacilityController::class, 'index'])->name('hotel-facilities');
 
-Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::middleware('role:admin')->get('/dashboard', function() {
-    return 'Dashboard';
-})->name('dashboard');
-Route::middleware('role:receptionist')->get('/beranda', function() {
-    return 'Beranda';
-})->name('beranda');
+// ===== Admin =====
 
+// Admin Dashboard
+Route::middleware('role:admin')->get('/admin', function () {
+    return redirect('/admin/dashboard');
+});
+Route::middleware('role:admin')->get('/admin/dashboard', [adminDashboardController::class, 'index'])->name('adminDashboard');
+// Admin Room Facilities
+Route::middleware('role:admin')->resource('admin/roomFacilities', adminRoomFacilityController::class);
+// Admin Hotel Facilities
+Route::middleware('role:admin')->resource('admin/hotelFacilities', adminHotelFacilityController::class);
+// Admin Rooms
+Route::middleware('role:admin')->resource('admin/rooms', adminRoomController::class);
+// Admin Accounts
+Route::middleware('role:admin')->resource('admin/adminAccounts', adminAccountController::class);
+// Admin Receptionist Accounts
+Route::middleware('role:admin')->resource('admin/receptionistAccounts', receptionistAccountController::class);
+// Admin Receptionist Accounts
+Route::middleware('role:admin')->resource('admin/guestAccounts', guestAccountController::class);
+
+
+// ===== Receptionist =====
+
+// Receptionist Dashboard
+Route::middleware('role:receptionist')->get('/receptionist/dashboard', [receptionistDashboardController::class, 'index'])->name('receptionistDashboard');
+// Receptionist Reservation
+Route::middleware('role:receptionist')->resource('receptionist/reservations', receptionistReservationController::class);
+
+// temporary view
 Route::get('/all-rooms', function () {
     return view('all-rooms');
-});
-Route::get('/services', function () {
-    return view('services');
 });
 Route::get('/about-us', function () {
     return view('about-us');
@@ -43,9 +87,15 @@ Route::get('/about-us', function () {
 Route::get('/contact-us', function () {
     return view('contact-us');
 });
-Route::get('/my-profile', function () {
-    return view('my-profile');
+Route::get('/test', function () {
+    return view('test');
 });
-Route::get('/room-details', function () {
+// Route::get('/dashboard', function () {
+//     return view('admin.dashboard');
+// });
+
+Route::group(['middleware' => 'auth'], function() {
+    Route::get('/room-details', function () {
     return view('room-details');
+    });
 });

@@ -482,8 +482,8 @@ th {
 }
 
 .inn-body-section {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 135px;
+    padding-bottom: 115px;
 }
 
 .inn-detail {
@@ -1932,11 +1932,11 @@ td {}
     float: left;
     width: 40%;
     background: url('../images/login.jpg') no-repeat center center;
-    padding: 11% 6%;
+    padding: 28.5% 6%;
     color: #fff;
     height: 100%;
     bottom: 0px;
-    /* min-height: 115%; */
+    min-height: 115%;
 }
 
 .log-in-pop-left::before {}
@@ -4356,7 +4356,7 @@ footer ul li a {
 /*  DASHBOARD PROFILE
 /*-------------------------------------------------------*/
 .db-profile {
-    padding: 40px;
+    padding: 20px;
     text-align: center;
     width: 50%;
     margin: 0 auto;
@@ -4377,6 +4377,7 @@ footer ul li a {
 .db-profile-view {
     width: 60%;
     margin: 0 auto;
+    padding-bottom: 100px;
     /* text-align: center; */
 }
 

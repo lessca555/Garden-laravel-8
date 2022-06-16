@@ -14,9 +14,9 @@
 								</ul>
 							</div>
 							<div class="foot-com foot-2">
-								<h5>Phone: (+404) 142 21 23 78</h5> </div>
+								<h5>Phone: +62 123 4567 8910</h5> </div>
 							<div class="foot-com foot-3">
-								<!--<a class="waves-effect waves-light" href="#">online room booking</a>--><a class="waves-effect waves-light" href="/all-rooms">room reservation</a> </div>
+								<!--<a class="waves-effect waves-light" href="#">online room booking</a>--><a class="waves-effect waves-light" href="/all-rooms">Booking</a> </div>
 						</div>
 					</div>
 				</div>
@@ -36,21 +36,13 @@
 									<div class="col-sm-12 col-md-3">
 										<h4>Popular Services</h4>
 										<ul class="two-columns">
-											<li><a href="all-hotels.html">Our Hotels</a>
+											<li><a href="/booking">Booking</a>
 											</li>
-											<li><a href="about-us.html">About Us</a>
+											<li><a href="/hotel-facilities">Facilities</a>
 											</li>
-											<li><a href="contact-us.html">Contact Us</a>
+											<li><a href="/about-us">About Us</a>
 											</li>
-											<li><a href="all-rooms.html">Master Suite</a>
-											</li>
-											<li><a href="all-rooms.html">Mini-Suite</a>
-											</li>
-											<li><a href="all-rooms.html">Ultra Deluxe</a>
-											</li>
-											<li><a href="all-rooms.html">Luxury Room</a>
-											</li>
-											<li><a href="all-rooms.html">Normal Room</a>
+											<li><a href="/contact-us">Contact Us</a>
 											</li>
 										</ul>
 									</div>

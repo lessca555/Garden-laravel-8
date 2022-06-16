@@ -1,21 +1,6 @@
 @extends('layouts.master')
 
 @section('content')
-        <div class="inn-banner">
-			<div class="container">
-				<div class="row">
-					<h4>About Us</h4>
-					<p>Curabitur auctor, massa sed interdum ornare, nulla sem vestibulum purus, eu maximus magna urna eu nunc.</p>
-					<p> </p>
-					<ul>
-						<li><a href="#">Home</a>
-						</li>
-						<li><a href="#">About Us</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
 		<div class="inn-body-section">
 			<div class="container">
 				<div class="row">
@@ -26,31 +11,28 @@
 							<div class="hl-2"></div>
 							<div class="hl-3"></div>
 						</div>
-						<p>Quisque at volutpat nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-3 col-sm-6 col-xs-12 new-con">
-						<h2>My-Hotel <span>Booking</span></h2>
-						<p>Hotels worldwide incl. Infos, Ratings and Photos. Make your Hotel Reservation cheap.</p>
+						<h2><span>Hotel</span> Hebat</h2>
+						<p>Make your Hotel Reservation cheap.</p>
 						<p>The top-rated hotel booking services.</p>
 					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12 new-con"> <img src="assets/images/icon/20.png" alt="">
+					<div class="col-md-3 col-sm-6 col-xs-12 new-con">
 						<h4>Address</h4>
-						<p>28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A.
-							<br>Landmark : Next To Airport</p>
+						<p>87 Dirgantara Street, Nusa Dua, Bali, Indonesia 80761. Landmark : Nusa Dua Tourism Area BTDC</p>
 					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12 new-con"> <img src="assets/images/icon/22.png" alt="">
+					<div class="col-md-3 col-sm-6 col-xs-12 new-con">
 						<h4>CONTACT INFO:</h4>
-						<p> <a href="tel://0099999999" class="contact-icon">Phone: 01 234874 965478</a>
-							<br> <a href="tel://0099999999" class="contact-icon">Mobile: 01 654874 965478</a>
-							<br> <a href="mailto:mytestmail@gmail.com" class="contact-icon">Email: info@company.com</a> </p>
+						<p> <a href="tel://0099999999" class="contact-icon">Phone: +62 123 4567 8910</a>
+							<br> <a href="mailto:mytestmail@gmail.com" class="contact-icon">Email: contact@hotelhebat.com</a> </p>
 					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12 new-con"> <img src="assets/images/icon/21.png" alt="">
+					<div class="col-md-3 col-sm-6 col-xs-12 new-con">
 						<h4>Website</h4>
-						<p> <a href="#">Website: www.mycompany.com</a>
-							<br> <a href="#">Facebook: www.facebook/my</a>
-							<br> <a href="#">Blog: www.blog.mycompany.com</a> </p>
+						<p>
+							<a href="#">Website: www.hotelhebat.com</a>
+						</p>
 					</div>
 				</div>
 			</div>

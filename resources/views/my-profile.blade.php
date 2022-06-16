@@ -5,7 +5,7 @@
 		<div class="inn-banner">
 			<div class="container">
                 <div class="row">
-                    <p>Hi {{ Auth::user()->name }},</p>
+                    <p>Hi, {{ Auth::user()->name }}</p>
                     <h4>Welcome to your dashboard</h4>
                 </div>
             </div>
@@ -15,34 +15,36 @@
                 <div class="row">
                     <div class="db-profile">
                         <img src="assets/images/user.jpg" alt="">
-					    <h4>{{ Auth::user()->name }}</h4>
+					    <h4>jokljkklj</h4>
 					    <p>28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A. Landmark : Next To Airport</p>
 				    </div>
                     <div class="db-profile-view">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Age</th>
-                                    <th>Join Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>32</td>
-                                    <td>May 2010</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Age</th>
+                                        <th>Join Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>32</td>
+                                        <td>May 2010</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        
                     </div>
                     <div class="db-profile-edit">
                         <form class="col s12">
                             <div>
                                 <label class="col s4">Full Name</label>
-                                <input type="text" value="{{ Auth::user()->name }}" class="validate">
+                                <input type="text" value="" class="validate">
                             </div>
                             <div>
                                 <label class="col s4">Email id</label>
-                                <input type="email" value="jana-novakova@gmail.com" class="validate">
+                                <input type="email" value="" class="validate">
                             </div>
                             <div>
                                 <label class="col s4">Phone</label>
@@ -55,10 +57,6 @@
                             <div>
                                 <label class="col s4">Address Line 1</label>
                                 <input type="text" value="28800 Orchard Lake Road" class="validate">
-                            </div>
-                            <div>
-                                <label class="col s4">Address Line 2</label>
-                                <input type="text" value="Suite 180 Farmington Hills, U.S.A" class="validate">
                             </div>
                             <div>
                                 <div class="col">

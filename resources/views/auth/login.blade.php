@@ -1,73 +1,90 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="en">
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+<head>
+	<title>Hotel Hebat</title>
+	<!-- META TAGS -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- FAV ICON(BROWSER TAB ICON) -->
+	<link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+	<!-- GOOGLE FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins%7CQuicksand:500,700" rel="stylesheet">
+	<!-- FONTAWESOME ICONS -->
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<!-- ALL CSS FILES -->
+	<link href="assets/css/materialize.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+	<!-- RESPONSIVE.CSS ONLY FOR MOBILE AND TABLET VIEWS -->
+	<link href="assets/css/responsive.css" rel="stylesheet">
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.js"></script>
+	<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
-                        @csrf
+<body data-ng-app="">
+	<!--MOBILE MENU-->
+	@include('partials.mobileNav')
+	<!--HEADER SECTION-->
+	<section>
+		<!--TOP SECTION-->
+		@include('partials.nav')
+		<!--TOP SECTION-->	
+		<div class="inn-body-section inn-detail">
+			<div class="container">
+				<div class="row">
+					<div class="inn-bod">
+						<div class="inn-detail-p1 inn-com inn-com-form">
+							<div class="col-md-12">
+                                <div class="head-typo collap-expand book-form inn-com-form">
+                                    <h2>Sign in</h2>
+                                    <p>Welcome Back!</p>
+                                    <form class="col s12" method="POST" action="{{ route('login') }}">
+										@csrf
 
-                        <div class="row mb-3">
-                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <div class="col-md-6 offset-md-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-                                    <label class="form-check-label" for="remember">
-                                        {{ __('Remember Me') }}
-                                    </label>
+                                        <div class="row">
+                                            <div class="input-field col s12">
+                                                <input type="email" class="validate" name="email" required>
+                                                <label>Email</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="input-field col s12">
+                                                <input type="password" class="validate" name="password" required>
+                                                <label>Password</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="input-field col s12">
+                                                <button class="btn waves-effect waves-light" type="submit" name="action">{{ __('Sign in') }}</button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="input-field col">
+                                                <p>Don't have account? <a href="{{ route('register') }}">Create your account</a></p>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
-                        </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</section>
+	<!--ALL SCRIPT FILES-->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery-ui.js"></script>
+	<script src="assets/js/angular.min.js"></script>
+	<script src="assets/js/bootstrap.js" type="text/javascript"></script>
+	<script src="assets/js/materialize.min.js" type="text/javascript"></script>
+	<script src="assets/js/jquery.mixitup.min.js" type="text/javascript"></script>
+	<script src="assets/js/custom.js"></script>
+</body>
 
-                        <div class="row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Login') }}
-                                </button>
-
-                                @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
-                                    </a>
-                                @endif
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-@endsection
+</html>

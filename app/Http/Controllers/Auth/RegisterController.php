@@ -5,9 +5,12 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\Models\User;
+use App\Models\Customer;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Carbon\Carbon;
+use DB;
 
 class RegisterController extends Controller
 {
@@ -53,6 +56,10 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'role' => ['required', 'string'],
+            'birth_date' => ['required', 'date'],
+            'address' => ['required', 'string'],
+            'phone' => ['required', 'string'],
         ]);
     }
 
@@ -61,13 +68,23 @@ class RegisterController extends Controller
      *
      * @param  array  $data
      * @return \App\Models\User
+     * @return \App\Models\Customer
      */ 
     protected function create(array $data)
     {
+        $customer = Customer::create([
+            'name' => $data['name'],
+            'email' => $data['email'],
+            'birth_date' => $data['birth_date'],
+            'address' => $data['address'],
+            'phone' => $data['phone'],
+            'role' => $data['role'],
+        ]);
         $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'role' => $data['role'],
         ]);
 
         $user->assignRole('user');

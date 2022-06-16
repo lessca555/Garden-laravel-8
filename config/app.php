@@ -165,6 +165,8 @@ return [
         /*
          * Package Service Providers...
          */
+        Barryvdh\DomPDF\ServiceProvider::class,
+        Yajra\DataTables\DataTablesServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -201,6 +203,7 @@ return [
         'Config' => Illuminate\Support\Facades\Config::class,
         'Cookie' => Illuminate\Support\Facades\Cookie::class,
         'Crypt' => Illuminate\Support\Facades\Crypt::class,
+        'DataTables' => Yajra\DataTables\Facades\DataTables::class,
         'Date' => Illuminate\Support\Facades\Date::class,
         'DB' => Illuminate\Support\Facades\DB::class,
         'Eloquent' => Illuminate\Database\Eloquent\Model::class,
@@ -215,6 +218,7 @@ return [
         'Mail' => Illuminate\Support\Facades\Mail::class,
         'Notification' => Illuminate\Support\Facades\Notification::class,
         'Password' => Illuminate\Support\Facades\Password::class,
+        'PDF' => Barryvdh\DomPDF\Facade::class,
         'Queue' => Illuminate\Support\Facades\Queue::class,
         'RateLimiter' => Illuminate\Support\Facades\RateLimiter::class,
         'Redirect' => Illuminate\Support\Facades\Redirect::class,
