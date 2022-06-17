@@ -76,9 +76,3 @@ Route::middleware('role:admin')->resource('admin/guestAccounts', guestAccountCon
 Route::middleware('role:receptionist')->get('/receptionist/dashboard', [receptionistDashboardController::class, 'index'])->name('receptionistDashboard');
 // Receptionist Reservation
 Route::middleware('role:receptionist')->resource('receptionist/reservations', receptionistReservationController::class);
-
-Route::group(['middleware' => 'auth'], function() {
-    Route::get('/room-details', function () {
-    return view('room-details');
-    });
-});
