@@ -77,23 +77,6 @@ Route::middleware('role:receptionist')->get('/receptionist/dashboard', [receptio
 // Receptionist Reservation
 Route::middleware('role:receptionist')->resource('receptionist/reservations', receptionistReservationController::class);
 
-// temporary view
-Route::get('/all-rooms', function () {
-    return view('all-rooms');
-});
-Route::get('/about-us', function () {
-    return view('about-us');
-});
-Route::get('/contact-us', function () {
-    return view('contact-us');
-});
-Route::get('/test', function () {
-    return view('test');
-});
-// Route::get('/dashboard', function () {
-//     return view('admin.dashboard');
-// });
-
 Route::group(['middleware' => 'auth'], function() {
     Route::get('/room-details', function () {
     return view('room-details');
