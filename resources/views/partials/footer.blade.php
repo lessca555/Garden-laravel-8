@@ -14,10 +14,11 @@
 								</ul>
 							</div>
 							<div class="foot-com foot-2">
-								<h5>Phone: +62 123 4567 8910</h5> </div>
+                                <h5><i class="fa-brands fa-whatsapp"></i> +62 123 4567 8910</h5>
+                            </div>
 							<div class="foot-com foot-3">
 								<!--<a class="waves-effect waves-light" href="#">online room booking</a>--><a class="waves-effect waves-light" href="/all-rooms">Booking</a> </div>
-						</div>
+						    </div>
 					</div>
 				</div>
 			</div>
@@ -48,8 +49,10 @@
 									</div>
 									<div class="col-sm-12 col-md-3">
 										<h4>Address</h4>
-										<p>87 Dirgantara Street, Nusa Dua, Bali, Indonesia 80761. Landmark : Nusa Dua Tourism Area BTDC</p>
-										<p> <span class="foot-phone">Phone: </span> <span class="foot-phone">+62 123 4567 8910</span> </p>
+										<p>Jl. Yos Sudarso No.11, Embong Kaliasin,
+
+                                            Genteng, Kota SBY, Jawa Timur 60271</p>
+										<p> <span class="foot-phone">Phone: </span> <span class="foot-phone">+62 8113180889</span> </p>
 									</div>
                                     <div class="col-sm-12 col-md-3 foot-social">
 										<h4>Follow with us</h4>

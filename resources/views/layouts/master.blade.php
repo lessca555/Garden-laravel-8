@@ -12,12 +12,15 @@
 	<link href="https://fonts.googleapis.com/css?family=Poppins%7CQuicksand:500,700" rel="stylesheet">
 	<!-- FONTAWESOME ICONS -->
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/d508f9c7b5.js" crossorigin="anonymous"></script>
 	<!-- ALL CSS FILES -->
 	<link href="assets/css/materialize.css" rel="stylesheet">
 	<link href="assets/css/style.css" rel="stylesheet">
 	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
 	<!-- RESPONSIVE.CSS ONLY FOR MOBILE AND TABLET VIEWS -->
 	<link href="assets/css/responsive.css" rel="stylesheet">
+
+
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -33,8 +36,8 @@
 	<section>
 		<!--TOP SECTION-->
 		@include('partials.nav')
-		<!--TOP SECTION-->	
-		@yield('content')		
+		<!--TOP SECTION-->
+		@yield('content')
 	</section>
 	<!--END HEADER SECTION-->
 	@include('partials.footer')
@@ -52,5 +55,6 @@
 	<script src="assets/js/jquery.mixitup.min.js" type="text/javascript"></script>
 	<script src="assets/js/custom.js"></script>
 </body>
+
 
 </html>

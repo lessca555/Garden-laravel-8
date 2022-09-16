@@ -19,7 +19,7 @@
                             <i class="fas fa-sign-out-alt"></i>
                             <span>Logout</span>
                         </a>
-                    
+
                 </form>
             </div>
           </li>
@@ -28,10 +28,10 @@
       <div class="main-sidebar">
         <aside id="sidebar-wrapper">
             <div class="sidebar-brand">
-                <a href="index.html">Hotel Hebat</a>
+                <a href="{{ route('home') }}">Garden Palace</a>
             </div>
             <div class="sidebar-brand sidebar-brand-sm">
-                <a href="index.html">HBT</a>
+                <a href="{{ route('home') }}">HBT</a>
             </div>
             @if (Auth::user()->role == 'admin')
                 <ul class="sidebar-menu">

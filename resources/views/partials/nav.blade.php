@@ -14,12 +14,13 @@
                                     @csrf
                                 </form>
 							</li>
-						</ul>      
+						</ul>
                     </div>
                 </div>
 				<div class="row">
 					<div class="logo">
-						<a href="index.html"><img src="assets/images/logo.png" alt="" />
+						<a href="{{ route('home') }}">
+                            <img src="assets/images/logo.webp" alt=""/>
 						</a>
 					</div>
 					<div class="menu-bar">

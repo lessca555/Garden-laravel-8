@@ -8,28 +8,28 @@
 					<li> <img src="assets/images/slider/1.jpg" alt="">
 						<!-- random image -->
 						<div class="caption center-align slid-cap">
-							<h2>Hotel Hebat</h2>
+							<h2>Welcome to Hotel Garden Palace</h2>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, reiciendis unde omnis, dolores consequatur cumque nemo autem earum fugit dolorem, exercitationem dignissimos in! Voluptate doloribus exercitationem veniam vero voluptatum ipsa.</p>
                         </div>
 					</li>
 					<li> <img src="assets/images/slider/2.jpg" alt="">
 						<!-- random image -->
 						<div class="caption center-align slid-cap">
-							<h2>Hotel Hebat</h2>
+							<h2>Hotel Garden Palace Private</h2>
 							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur rem eveniet dicta aut doloribus temporibus minima dolore nesciunt porro fugiat, quis excepturi vitae at velit odit delectus laborum praesentium id?</p>
                         </div>
 					</li>
 					<li> <img src="assets/images/slider/3.jpg" alt="">
 						<!-- random image -->
 						<div class="caption center-align slid-cap">
-							<h2>Hotel Hebat</h2>
+							<h2>Hotel Garden Palace Convention</h2>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, aut eos autem hic quaerat itaque dignissimos natus consequatur ullam omnis repudiandae voluptatem atque nobis dolorem doloribus. Laudantium numquam nam vero!</p>
                         </div>
 					</li>
 					<li> <img src="assets/images/slider/4.jpg" alt="">
 						<!-- random image -->
 						<div class="caption center-align slid-cap">
-							<h2>Hotel Hebat</h2>
+							<h2>Hotel Garden Palace Convention</h2>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas numquam ratione modi eveniet commodi sint beatae ipsam iste! Quam quibusdam vero minima hic temporibus expedita architecto voluptate, quidem qui.</p>
                         </div>
 					</li>
@@ -98,7 +98,7 @@
 								<img src="{{ asset('storage/' . $hotelFacility->image) }}" alt="">
 							</div>
 							<!--event DETAILS-->
-							<div class="n22-event"> 
+							<div class="n22-event">
 								<a href="#!"><h4>{{ $hotelFacility->facility_name }}</h4></a>
 							</div>
 						</div>

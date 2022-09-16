@@ -10,6 +10,7 @@ use App\Http\Controllers\Admin\adminAccountController;
 use App\Http\Controllers\Admin\receptionistAccountController;
 use App\Http\Controllers\Admin\guestAccountController;
 use App\Http\Controllers\BookingController;
+use App\Http\Controllers\RoomController;
 use App\Http\Controllers\PrintController;
 use App\Http\Controllers\HomeFacilityController;
 use App\Http\Controllers\Receptionist\receptionistDashboardController;
@@ -29,6 +30,16 @@ use App\Http\Controllers\Receptionist\receptionistReservationController;
 Route::get('/', function () {
     return redirect('/home');
 });
+
+Route::get('/about-us', function () {
+    return view('about-us');
+});
+
+Route::get('/contact-us', function () {
+    return view('contact-us');
+});
+
+Route::get('/all-rooms', [RoomController::class, 'index']);
 
 Auth::routes();
 
@@ -76,3 +87,8 @@ Route::middleware('role:admin')->resource('admin/guestAccounts', guestAccountCon
 Route::middleware('role:receptionist')->get('/receptionist/dashboard', [receptionistDashboardController::class, 'index'])->name('receptionistDashboard');
 // Receptionist Reservation
 Route::middleware('role:receptionist')->resource('receptionist/reservations', receptionistReservationController::class);
+
+Route::middleware('auth')->group(function () {
+    Route::middleware('role:user')->get('booking', [BookingController::class, 'index'])->name('booking');
+    Route::middleware('role:user')->post('booking', [BookingController::class, 'store'])->name('reservation');
+});

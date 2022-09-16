@@ -28,5 +28,5 @@
 				</div>
 			</div>
 		</div>
-		<!--TOP SECTION-->
+	<!--TOP SECTION-->
 @endsection
