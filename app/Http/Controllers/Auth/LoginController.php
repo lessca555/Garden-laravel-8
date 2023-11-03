@@ -46,9 +46,12 @@ class LoginController extends Controller
         }
         elseif ($user->hasRole('receptionist')) {
             return redirect()->route('receptionistDashboard');
+        }elseif($user->hasRole("user")){
+            return redirect()->route('home');
+        }else{
+            return redirect()->route('login');
         }
 
-        return redirect()->route('home');
     }
 
     public function logout(Request $request)

@@ -1,18 +1,21 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\RoomController;
+use App\Http\Controllers\PrintController;
+use App\Http\Controllers\BookingController;
 use App\Http\Controllers\Auth\ProfileController;
+use App\Http\Controllers\HomeFacilityController;
+use App\Http\Controllers\HotelFacilityController;
+use App\Http\Controllers\Admin\adminRoomController;
+use App\Http\Controllers\Admin\adminAccountController;
+use App\Http\Controllers\Admin\guestAccountController;
 use App\Http\Controllers\Admin\adminDashboardController;
 use App\Http\Controllers\Admin\adminRoomFacilityController;
 use App\Http\Controllers\Admin\adminHotelFacilityController;
-use App\Http\Controllers\Admin\adminRoomController;
-use App\Http\Controllers\Admin\adminAccountController;
 use App\Http\Controllers\Admin\receptionistAccountController;
-use App\Http\Controllers\Admin\guestAccountController;
-use App\Http\Controllers\BookingController;
-use App\Http\Controllers\RoomController;
-use App\Http\Controllers\PrintController;
-use App\Http\Controllers\HomeFacilityController;
 use App\Http\Controllers\Receptionist\receptionistDashboardController;
 use App\Http\Controllers\Receptionist\receptionistReservationController;
 

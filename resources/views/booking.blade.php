@@ -20,13 +20,13 @@
                             <div class="row">
 								<div class="col s12">
                                     <label class="col s4" for="guest_name">Full Name</label>
-                                    <input type="text" class="validate" id="guest_name" name="guest_name" required>
+                                    <input type="text" class="validate" id="guest_name" name="guest_name" value="{{ Auth::user()->name }}" required disabled readonly>
 								</div>
 							</div>
                             <div class="row">
 								<div class="col s12">
                                     <label class="col s4" for="email">Email Address</label>
-                                    <input type="email" class="validate" id="email" name="email" required>
+                                    <input type="email" class="validate" id="email" name="email" value="{{ Auth::user()->email }}" required disabled readonly>
 								</div>
 							</div>
                             <div class="row">

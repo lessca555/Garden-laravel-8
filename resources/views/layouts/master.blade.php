@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Hotel Hebat</title>
+	<title>Garden Palace</title>
 	<!-- META TAGS -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
