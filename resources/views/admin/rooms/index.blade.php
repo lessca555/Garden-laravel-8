@@ -71,7 +71,7 @@
                                                                 <td>{{ $room->room_type }}</td>
                                                                 <td>{{ $room->number_of_rooms }}</td>
                                                                 <td>{{ $room->Facility->facility_name }}</td>
-                                                                <td><img src="{{ asset('storage/' . $room->image) }}" alt="Image {{ $room->room_type }}" width="50"></td>
+                                                                <td><img src="{{ asset('assets/images/room') }}/{{ $room->image }}" alt="Image {{ $room->room_type }}" width="50"></td>
                                                                 <td>
                                                                 <form action="{{ route('rooms.destroy', $room->id) }}" method="POST">
                                                                     <a href="{{ route('rooms.show', $room->id) }}" class="btn btn-secondary"><i class="fas fa-info"></i></a>

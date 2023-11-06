@@ -13,7 +13,7 @@
               <div class="dropdown-divider"></div>
                 <form method="POST" action="/logout">
                 @csrf
-                        <a class="dropdown-item has-icon text-danger" href="/logout"
+                        <a class="dropdown-item has-icon text-danger" href="{{ route('logout') }}"
                             onclick="event.preventDefault();
                                 this.closest('form').submit();">
                             <i class="fas fa-sign-out-alt"></i>
@@ -30,8 +30,10 @@
             <div class="sidebar-brand">
                 <a href="{{ route('home') }}">Garden Palace</a>
             </div>
-            <div class="sidebar-brand sidebar-brand-sm">
-                <a href="{{ route('home') }}">HBT</a>
+            <div class="sidebar-brand sidebar-brand-sm" style="background-color: #6777EF;">
+                <a href="{{ route('home') }}">
+                    <img src="{{ asset('assets/images/dash-logo-fin.png') }}" alt="" width="40px">
+                </a>
             </div>
             @if (Auth::user()->role == 'admin')
                 <ul class="sidebar-menu">

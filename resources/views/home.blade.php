@@ -53,7 +53,7 @@
 					@foreach ($guestRooms as $guestRoom)
 					<div class="room room-1">
 						<!--ROOM IMAGE-->
-						<div class="r1 r-com r-com-1 r1-1"><img src="{{ asset('storage/' . $guestRoom->image) }}" alt="" /> </div>
+						<div class="r1 r-com r-com-1 r1-1"><img src="{{ asset('assets/images/room/' . $guestRoom->image) }}" alt="" height="300px" /> </div>
 						<!--ROOM DESCRIPTION-->
 						<div class="r2 r-com r-com-1">
 							<h3>{{ $guestRoom->room_type }} Room</h3>

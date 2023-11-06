@@ -27,7 +27,7 @@
                             <div class="chocolat-parent">
                                 <a href="{{ asset('storage/' . $room->image) }}" class="chocolat-image">
                                     <div data-crop-image="285">
-                                        <img alt="image" src="{{ asset('storage/' . $room->image) }}" class="img-fluid">
+                                        <img alt="image" src="{{ asset('assets/images/room/' . $room->image) }}" class="img-fluid">
                                     </div>
                                 </a>
                             </div>

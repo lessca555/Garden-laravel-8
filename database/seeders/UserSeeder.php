@@ -16,7 +16,7 @@ class UserSeeder extends Seeder
     {
         $admin = User::create([
             'name' => 'Admin Role',
-            'email' => 'admin@hotelhebat.com',
+            'email' => 'admin@garden.com',
             'password' => bcrypt('12345678'),
             'role' => 'admin',
         ]);
@@ -25,7 +25,7 @@ class UserSeeder extends Seeder
 
         $user = User::create([
             'name' => 'User Role',
-            'email' => 'user@hotelhebat.com',
+            'email' => 'user@garden.com',
             'password' => bcrypt('12345678'),
             'role' => 'user',
         ]);
@@ -34,7 +34,7 @@ class UserSeeder extends Seeder
 
         $receptionist = User::create([
             'name' => 'Receptionist Role',
-            'email' => 'receptionist@hotelhebat.com',
+            'email' => 'receptionist@garden.com',
             'password' => bcrypt('12345678'),
             'role' => 'receptionist',
         ]);
