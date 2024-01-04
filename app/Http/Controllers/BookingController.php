@@ -20,8 +20,8 @@ class BookingController extends Controller
     public function store(Request $request)
     {
         $bookingRules = [
-            'guest_name' => 'required',
-            'email' => 'required|email:dns',
+            // 'guest_name' => 'required',
+            // 'email' => 'required',
             'phone' => 'required|numeric',
             'room_id' => 'required',
             'check_in' => 'required',
@@ -31,8 +31,13 @@ class BookingController extends Controller
 
         $validateBooking = $request->validate($bookingRules);
 
+        // dd($request->all());
+
         $validateBooking['user_id'] = auth()->user()->id;
+        $validateBooking['guest_name'] = auth()->user()->name;
+        $validateBooking['email'] = auth()->user()->email;
         $validateBooking['status'] = 'booking';
+
 
         Booking::create($validateBooking);
 

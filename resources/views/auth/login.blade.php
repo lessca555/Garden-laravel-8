@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Hotel Hebat</title>
+	<title>Garden Palace</title>
 	<!-- META TAGS -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,7 +33,7 @@
 	<section>
 		<!--TOP SECTION-->
 		@include('partials.nav')
-		<!--TOP SECTION-->	
+		<!--TOP SECTION-->
 		<div class="inn-body-section inn-detail">
 			<div class="container">
 				<div class="row">
@@ -75,7 +75,7 @@
 					</div>
 				</div>
 			</div>
-		</div>		
+		</div>
 	</section>
 	<!--ALL SCRIPT FILES-->
 	<script src="assets/js/jquery.min.js"></script>

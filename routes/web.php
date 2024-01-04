@@ -91,6 +91,8 @@ Route::middleware('role:receptionist')->get('/receptionist/dashboard', [receptio
 // Receptionist Reservation
 Route::middleware('role:receptionist')->resource('receptionist/reservations', receptionistReservationController::class);
 
+// Route::get('/booking', [BookingController::class, 'index']);
+
 Route::middleware('auth')->group(function () {
     Route::middleware('role:user')->get('booking', [BookingController::class, 'index'])->name('booking');
     Route::middleware('role:user')->post('booking', [BookingController::class, 'store'])->name('reservation');

@@ -17,18 +17,18 @@
                         <form class="col s12" action="{{ route('reservation') }}" method="POST">
                             @csrf
 
-                            <div class="row">
+                            {{-- <div class="row">
 								<div class="col s12">
                                     <label class="col s4" for="guest_name">Full Name</label>
-                                    <input type="text" class="validate" id="guest_name" name="guest_name" value="{{ Auth::user()->name }}" required disabled readonly>
+                                    <input type="text" class="validate" id="guest_name" name="guest_name" value="{{ Auth::user()->name }}" disabled>
 								</div>
 							</div>
                             <div class="row">
 								<div class="col s12">
                                     <label class="col s4" for="email">Email Address</label>
-                                    <input type="email" class="validate" id="email" name="email" value="{{ Auth::user()->email }}" required disabled readonly>
+                                    <input type="email" class="validate" id="email" name="email" value="{{ Auth::user()->email }}" disabled>
 								</div>
-							</div>
+							</div> --}}
                             <div class="row">
 								<div class="col s12">
                                     <label class="col s4" for="phone">Phone Number</label>

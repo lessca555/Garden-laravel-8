@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Hotel Hebat</title>
+	<title>Garden Palace</title>
 	<!-- META TAGS -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,7 +33,7 @@
 	<section>
 		<!--TOP SECTION-->
 		@include('partials.nav')
-		<!--TOP SECTION-->	
+		<!--TOP SECTION-->
 		<div class="inn-body-section inn-detail">
 			<div class="container">
 				<div class="row">
@@ -45,7 +45,7 @@
                                     <p>Create your account. It's take less then a minutes</p>
                                     <form class="col s12" method="POST" action="{{ route('register') }}">
 										@csrf
-										
+
                                         <div class="row">
                                             <div class="input-field col s12">
                                                 <input id="name" type="text" class="validate" name="name" value="{{ old('name') }}" required autocomplete="name">
@@ -107,7 +107,7 @@
 					</div>
 				</div>
 			</div>
-		</div>		
+		</div>
 	</section>
 	<!--ALL SCRIPT FILES-->
 	<script src="assets/js/jquery.min.js"></script>

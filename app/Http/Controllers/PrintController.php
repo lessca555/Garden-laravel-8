@@ -24,6 +24,6 @@ class PrintController extends Controller
 
         $pdf = PDF::setOptions(['isPhpEnabled' => true])->loadview('print', $data);
 
-        return $pdf->download('hotelhebat-' . $reservation->created_at->format('dmy') . '-' . $data['id'] . '.pdf');
+        return $pdf->download('Garden Palace-' . $reservation->created_at->format('dmy') . '-' . $data['id'] . '.pdf');
     }
 }

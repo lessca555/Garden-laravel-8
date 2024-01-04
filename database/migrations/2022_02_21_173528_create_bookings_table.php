@@ -18,7 +18,7 @@ class CreateBookingsTable extends Migration
 
             $table->string('guest_name');
             $table->foreignId('user_id')->constrained('users');
-            $table->string('email')->unique();
+            $table->string('email');
             $table->string('phone');
             $table->foreignId('room_id')->constrained('rooms');
             $table->dateTime('check_in')->nullable();
